@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#ffffff" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="canonical" href="https://lunor.lol" />
+    <meta property="og:title" content="Lunor.lol - Your All In One Scripthub. 🌕" />
+    <meta property="og:description" content="Your full moon to roblox scripting. 🌕" />
+    <meta property="og:image" content="/megaimage.png" />
+    <meta property="og:image:alt" content="Profile Picture" />
+    <meta property="og:image:width" content="1419" />
+    <meta property="og:image:height" content="679" />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lunor.lol - Your All In One Scripthub. 🌕" />
+    <meta name="twitter:image" content="/megaimage.png" />
+    <meta name="twitter:image:alt" content="Profile Picture" />
+    <meta name="twitter:image:width" content="1419" />
+    <meta name="twitter:image:height" content="750" />
+    <title>404 Not Found - Lunor</title>
+    <link rel="icon" href="icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <style>
+       
+        :root {
+            --gold-color: #b802c8;
+            --error-red: #ff3860; 
+            --error-red-glow: rgba(255, 56, 96, 0.7);
+        }
+
+        html {
+             scrollbar-color: rgba(255, 255, 255, 0.85) transparent;
+             scrollbar-width: thin;
+        }
+
+       
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050505;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            overflow-x: hidden;
+            overflow-y: hidden; 
+        }
+      
+        body, a, button, input, textarea, select, label {
+             cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><g filter="drop-shadow(0 0 3px rgba(255, 255, 255, 0.9)) drop-shadow(0 0 5px rgba(255, 255, 255, 0.7))"><path fill="white" d="M4 4l18 11.4-7.3 1.6L9.4 28 4 4z"/><path fill="black" stroke="black" stroke-width="0.5" d="M5.5 5.5l15 9.4-5.8 1.3L10 26.2 5.5 5.5z"/></g></svg>') 4 4, auto !important;
+        }
+
+        ::selection { background: rgba(255, 255, 255, 0.3); color: white; text-shadow: none; }
+        ::-moz-selection { background: rgba(255, 255, 255, 0.3); color: white; text-shadow: none; }
+
+      
+        ::-webkit-scrollbar { width: 18px; }
+        ::-webkit-scrollbar-track { background: transparent; border: none; border-radius: 0; }
+        ::-webkit-scrollbar-thumb { background-color: rgba(255, 255, 255, 0.85); border-radius: 9px; border: 4px solid transparent; background-clip: content-box; box-shadow: 0 0 15px rgba(255, 255, 255, 0.9), 0 0 25px rgba(255, 255, 255, 0.7); transition: background-color 0.3s ease, box-shadow 0.3s ease; }
+        ::-webkit-scrollbar-thumb:hover { background-color: rgba(255, 255, 255, 1); box-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 35px rgba(255, 255, 255, 0.8); }
+        ::-webkit-scrollbar-button { display: none; }
+
+      
+        #background-moon-container { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; z-index: -2; overflow: hidden; pointer-events: none; }
+        #background-moon-svg { width: 65vw; height: auto; opacity: 0.15; filter: blur(20px) drop-shadow(0 0 50px rgba(210, 210, 255, 0.7)); transform: rotate(-15deg); }
+
+       
+        body::after { content: ''; position: fixed; inset: 0; background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px); background-size: 30px 30px; opacity: 0; z-index: -1; pointer-events: none; animation: fadeInDots 5s ease-in-out forwards; }
+        @keyframes fadeInDots { from { opacity: 0; } to { opacity: 0.15; } }
+
+        #main-content { position: relative; z-index: 1; }
+
+      
+        #loading-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.85); backdrop-filter: blur(10px); display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 100; opacity: 1; transition: opacity 0.5s ease-out; }
+
+        #loading-icon {
+            width: 280px;
+            height: 280px;
+            animation: bounceScale 1.5s ease-in-out infinite alternate;
+            filter: drop-shadow(0 0 15px rgba(255,255,255,0.6)); 
+            box-shadow: 0 0 0px 0px transparent; 
+        }
+        .page-404 #loading-icon {
+          
+             animation:
+                bounceScale 1.5s ease-in-out infinite alternate, 
+                shake 0.5s linear infinite 1.5s, 
+                fadeToRed 1s ease-out 1.5s forwards; 
+        }
+
+        @keyframes bounceScale { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+      
+        @keyframes shake {
+          0%, 100% { transform: translateX(0) scale(1.1); }
+          10%, 30%, 50%, 70%, 90% { transform: translateX(-5px) scale(1.1); }
+          20%, 40%, 60%, 80% { transform: translateX(5px) scale(1.1); }
+        }
+       
+        @keyframes fadeToRed {
+            0% { box-shadow: 0 0 0px 0px transparent; }
+            100% { box-shadow: 0 0 25px 10px var(--error-red-glow); } 
+        }
+
+        #loading-bar-container { width: 200px; height: 8px; background-color: rgba(255, 255, 255, 0.2); border-radius: 4px; margin-top: 20px; overflow: hidden; }
+        #loading-bar { width: 0%; height: 100%; background-color: #ffffff; border-radius: 4px; animation: fillBar 2.1s linear forwards; box-shadow: 0 0 8px rgba(255,255,255,0.5); }
+        .page-404 #loading-bar {
+          
+             animation:
+                fillBar 2.1s linear forwards,
+                barToRed 1s ease-out 1.5s forwards; 
+        }
+
+        @keyframes fillBar { from { width: 0%; } to { width: 100%; } }
+     
+        @keyframes barToRed {
+            0% { background-color: #ffffff; box-shadow: 0 0 8px rgba(255,255,255,0.5); }
+            100% { background-color: var(--error-red); box-shadow: 0 0 10px var(--error-red-glow); }
+        }
+
+        #loading-screen.loaded { opacity: 0; pointer-events: none; }
+
+      
+        .navbar { background-color: rgba(10, 10, 10, 0.8); backdrop-filter: blur(15px); border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+        .navbar-title { color: #fff; text-shadow: 0 0 10px rgba(255, 255, 255, 0.9); }
+        .navbar .glowing-icon { fill: #fff; filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8)); transition: filter 0.4s ease-out, transform 0.4s ease-out; }
+        .navbar a.group:hover .glowing-icon { filter: drop-shadow(0 0 14px rgba(255, 255, 255, 1)) drop-shadow(0 0 22px rgba(255, 255, 255, 0.8)); transform: scale(1.15) rotate(10deg); }
+
+        nav a { position: relative; padding-bottom: 4px; overflow: hidden; color: #d1d5db; transition: color 0.3s ease; }
+        nav a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background-color: rgba(255, 255, 255, 0.8); transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease-out, background-color 0.3s ease; }
+        nav a:hover { color: #fff; }
+        nav a:hover::after { transform: scaleX(1); }
+        .discord-link { color: #5865F2 !important; }
+        .discord-link:hover::after { background-color: #5865F2; }
+        .premium-link { color: var(--gold-color) !important; background-image: linear-gradient( 90deg, rgba(184, 2, 200, 0.2) 25%, rgba(184, 2, 200, 1) 40%, rgba(184, 2, 200, 1) 60%, rgba(184, 2, 200, 0.2) 75% ); background-size: 250% auto; background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent; animation: shimmer 3s linear infinite; font-weight: 600; }
+        @keyframes shimmer { 0% { background-position: -250%; } 100% { background-position: 250%; } }
+        .premium-link:hover::after { background-color: var(--gold-color); }
+
+       
+        .not-found-container { min-height: calc(100vh - 150px); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 2rem; }
+        .not-found-404 { font-size: 10rem; font-weight: 800; line-height: 1; color: rgba(255, 255, 255, 0.5); text-shadow: 0 0 15px rgba(255, 255, 255, 0.3); margin-bottom: 0.5rem; }
+        .not-found-title { font-size: 2.5rem; font-weight: 700; color: #fff; text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; }
+        .not-found-title::before { content: ''; display: inline-block; width: 0.8em; height: 0.8em; margin-right: 0.5em; background-image: url('data:image/svg+xml;utf8,<svg fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>'); background-size: contain; background-repeat: no-repeat; background-position: center; filter: drop-shadow(0 0 8px rgba(210, 210, 255, 0.5)); vertical-align: middle; flex-shrink: 0; }
+        .not-found-text { color: #d1d5db; font-size: 1.1rem; margin-bottom: 2.5rem; max-width: 500px; }
+        .home-button { background-color: #ffffff; color: #000000; padding: 0.75rem 2.5rem; border-radius: 9999px; font-weight: 600; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, filter 0.3s ease; border: 1px solid #ffffff; box-shadow: 0 0 18px rgba(255, 255, 255, 0.4), 0 0 8px rgba(255, 255, 255, 0.3); display: inline-block; text-decoration: none; }
+        .home-button:hover { background-color: #cccccc; color: #000000; transform: scale(1.05); box-shadow: 0 0 25px rgba(255, 255, 255, 0.6), 0 0 12px rgba(255, 255, 255, 0.4); filter: brightness(1.1); }
+
+        .footer { background-color: #111111; color: #a0a0a0; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+         .footer-credit { color: #d1d5db; font-size: 0.9rem; margin-top: 0.5rem; font-weight: 500; text-shadow: none; }
+
+        .main-content { opacity: 0; transition: opacity 0.5s ease-in 0.2s; }
+        .main-content.visible { opacity: 1; }
+
+    </style>
+</head>
+<body class="bg-black text-white page-404"> <div id="background-moon-container">
+        <svg id="background-moon-svg" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+        </svg>
+    </div>
+
+    <div id="loading-screen">
+        <img id="loading-icon" src="loadingicon.png" alt="Loading..."
+             onerror="this.onerror=null; this.src='https://placehold.co/280x280/000000/ffffff?text=L';"
+             ondragstart="return false;" oncontextmenu="return false;">
+        <div id="loading-bar-container">
+            <div id="loading-bar"></div>
+        </div>
+    </div>
+
+    <div id="main-content" class="main-content">
+        <header class="navbar py-4 px-6 fixed w-full top-0 z-50">
+             <div class="container mx-auto flex items-center justify-between">
+                 <a href="/" class="flex items-center group" aria-label="Go to homepage">
+                     <svg class="w-8 h-8 mr-3 glowing-icon" fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                     <h1 class="navbar-title text-2xl font-semibold">Lunor</h1>
+                 </a>
+                 <nav class="hidden md:flex items-center space-x-6">
+                     <a href="/" >Main</a>
+                     <a href="/discord" class="discord-link">Discord</a>
+                     <a href="/features">Features</a>
+                     <a href="/premium" class="premium-link">Premium</a>
+                 </nav>
+                 <div class="md:hidden">
+                     <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none">
+                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                         </svg>
+                     </button>
+                 </div>
+             </div>
+             <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-black bg-opacity-95 backdrop-blur-md py-4 px-6 space-y-3 border-t border-gray-700">
+                 <a href="/" class="block text-gray-300 hover:text-white transition-colors duration-300">Main</a>
+                 <a href="/discord" class="block text-gray-300 hover:text-white transition-colors duration-300">Discord</a>
+                 <a href="/features" class="block text-gray-300 hover:text-white transition-colors duration-300">Features</a>
+                 <a href="/premium" class="block text-gray-300 hover:text-white transition-colors duration-300">Premium</a>
+             </div>
+        </header>
+
+        <main class="container mx-auto px-4">
+            <div class="not-found-container">
+                <h1 class="not-found-404">404</h1>
+                <h2 class="not-found-title">Page Not Found</h2>
+                <p class="not-found-text">
+                    Oops! Looks like the page you were searching for isn't available. Maybe it was moved, or you mistyped the address.
+                </p>
+                <a href="/" class="home-button">Go Home</a>
+            </div>
+            </main>
+
+        <footer class="footer py-8 text-center mt-16">
+            <p class="text-gray-400">© <span id="current-year"></span> Lunor. All rights reserved.</p>
+            <p class="text-sm text-gray-500 mt-2">Best Roblox Script Hub</p>
+             <p class="footer-credit" onclick="copyDiscordId()">Made by bleh2rich</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+
+        window.addEventListener('load', () => {
+            const loadingScreen = document.getElementById('loading-screen');
+            const mainContent = document.getElementById('main-content');
+        
+            const minLoadTime = 2500;
+            setTimeout(() => {
+                if (loadingScreen) loadingScreen.classList.add('loaded');
+                document.body.style.overflowY = 'auto'; 
+                document.body.style.overflowX = 'hidden';
+                if (mainContent) mainContent.classList.add('visible');
+            }, minLoadTime);
+        });
+
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', (event) => {
+                event.stopPropagation();
+                mobileMenu.classList.toggle('hidden');
+            });
+            document.addEventListener('click', (event) => {
+                if (mobileMenu && !mobileMenu.classList.contains('hidden') && !mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        }
+
+        const yearSpan = document.getElementById('current-year');
+        if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+     
+        try {
+            const lenis = new Lenis({ lerp: 0.08, wheelMultiplier: 0.8, smoothWheel: true, smoothTouch: true });
+            function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+            requestAnimationFrame(raf);
+            window.lenisInstance = lenis;
+        } catch (error) { console.error("Failed to initialize Lenis:", error); }
+
+       
+        function copyDiscordId() {
+            const discordId = "1300475971081732127";
+            navigator.clipboard.writeText(discordId).then(() => {
+                let existingNotification = document.getElementById('copy-notification');
+                if (existingNotification) { document.body.removeChild(existingNotification); }
+                const message = document.createElement('div');
+                message.id = 'copy-notification';
+                Object.assign(message.style, { position: 'fixed', top: '20px', left: '50%', transform: 'translateX(-50%)', backgroundColor: 'rgba(30, 30, 30, 0.85)', color: '#fff', padding: '10px 25px', borderRadius: '8px', boxShadow: '0 4px 15px rgba(0,0,0,0.3)', zIndex: '10000', fontSize: '0.9rem', textAlign: 'center', opacity: '0', transform: 'translate(-50%, -10px)', transition: 'opacity 0.3s ease-out, transform 0.3s ease-out' });
+                message.textContent = "Copied Discord User ID!";
+                document.body.appendChild(message);
+                setTimeout(() => { message.style.opacity = '1'; message.style.transform = 'translate(-50%, 0)'; }, 50);
+                setTimeout(() => {
+                    message.style.opacity = '0'; message.style.transform = 'translate(-50%, -10px)';
+                    setTimeout(() => { if (message.parentNode === document.body) { document.body.removeChild(message); } }, 300);
+                }, 2000);
+            }).catch(err => { console.error('Failed to copy: ', err); alert("Could not copy automatically. Please copy manually: " + discordId); });
+        }
+    </script>
+</body>
+</html>
