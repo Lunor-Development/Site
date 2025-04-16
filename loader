@@ -1,0 +1,19 @@
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
+
+local creator = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Creator.CreatorTargetId
+
+local games = {
+    [7381705] = 'https://api.luarmor.net/files/v3/loaders/f6c9f276f7d6a7dd6edfd0173d7a211d.lua', -- Fisch
+    [11867394] = 'https://api.luarmor.net/files/v3/loaders/725ce097c244a8e5ee7cd4625820718a.lua', -- DR
+    [34644452] = 'https://api.luarmor.net/files/v3/loaders/7d62d8d6c100c07fe0bee9ca371cdffe.lua', -- AC
+    [35687503] = 'https://api.luarmor.net/files/v3/loaders/5a8678a607751f74d8042b9b46bf00c8.lua', -- Hunters
+    [3333298] = 'https://api.luarmor.net/files/v3/loaders/4df8f816d04143ecfb2f7523fbeeaf39.lua', -- BGSI
+}
+
+if games[creator] then
+    loadstring(game:HttpGet(games[creator]))()
+else
+    warn("Unsupported game")
+end
