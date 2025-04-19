@@ -11,6 +11,7 @@ local games = {
     [34644452] = 'https://api.luarmor.net/files/v3/loaders/174073ae4a743731a80f310372e9e143.lua', -- AC
     [35687503] = 'https://api.luarmor.net/files/v3/loaders/1d1aa3f375ce2b9b3641df4f1e5796b5.lua', -- Hunters
     [3333298] = 'https://api.luarmor.net/files/v3/loaders/726a94a07b28d9c2e91d181ce3417abf.lua', -- BGSI
+    [35497641] = 'https://api.luarmor.net/files/v3/loaders/6e35d34a59d661ee6cfbeebd0af2db3e.lua', -- Beaks
 }
 
 if games[creator] then
