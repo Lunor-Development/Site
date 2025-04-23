@@ -750,7 +750,7 @@
 
 
 function copyLoaderScript() {
-    const scriptToCopy = `script_key = 'Insert Lunor Key Here';\n\nloadstring(game:HttpGet('https://raw.githubusercontent.com/Catto-YFCN/Lunor_Dependencies/refs/heads/main/Loader'))()`;
+    const scriptToCopy = `script_key = 'Insert Lunor Key Here';\n\nloadstring(game:HttpGet('https://lunor.dev/loader'))()`;
 
     navigator.clipboard.writeText(scriptToCopy).then(() => {
         showCopyNotification("Copied script!"); 
