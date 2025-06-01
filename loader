@@ -1,4 +1,4 @@
-local creator = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Creator.CreatorTargetId
+local creator = game.CreatorId
 if creator == 3333298 then
   loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/4df8f816d04143ecfb2f7523fbeeaf39.lua"))()
 else
