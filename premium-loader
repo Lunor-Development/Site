@@ -13,6 +13,8 @@ local games = {
     [3333298] = 'https://api.luarmor.net/files/v3/loaders/726a94a07b28d9c2e91d181ce3417abf.lua', -- BGSI
     [35497641] = 'https://api.luarmor.net/files/v3/loaders/6e35d34a59d661ee6cfbeebd0af2db3e.lua', -- Beaks
     [35789249] = 'https://api.luarmor.net/files/v3/loaders/309cb9a43a1282b7b0decfc147778ea8.lua', -- GAG
+    [35815907] = 'https://api.luarmor.net/files/v3/loaders/b7563b26ea12d46d28f066fb80cf3573.lua', -- SAB
+    [6042520] = 'https://api.luarmor.net/files/v3/loaders/b02714d003d63046974eae64d020e6bd.lua', -- 99 Nights
 }
 
 if games[creator] then
