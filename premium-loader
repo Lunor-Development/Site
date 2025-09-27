@@ -16,6 +16,7 @@ local games = {
     [35815907] = 'https://api.luarmor.net/files/v3/loaders/b7563b26ea12d46d28f066fb80cf3573.lua', -- SAB
     [6042520] = 'https://api.luarmor.net/files/v3/loaders/b02714d003d63046974eae64d020e6bd.lua', -- 99 Nights
     [34869880] = 'https://api.luarmor.net/files/v3/loaders/967853bf20a80d456090a3f219ab8ad2.lua', -- PVB
+    [35102746] = 'https://api.luarmor.net/files/v3/loaders/6b4001830e15b3b842803bc342dd1304.lua', -- Fish It
 }
 
 if games[creator] then
