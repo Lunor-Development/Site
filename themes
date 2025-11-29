@@ -1,4 +1,4 @@
-local themes = {
+local Themes = {
 	default = {
 		maincolor = Color3.fromRGB(9, 9, 9),
 		bordercolor = Color3.fromRGB(39, 39, 42),
@@ -10,172 +10,474 @@ local themes = {
 
 		primarycolor = Color3.fromRGB(78, 34, 197),
 
-		-- Tabs Themes
 		offTextBtn = Color3.fromRGB(63, 63, 63),
 		offBgLineBtn = Color3.fromRGB(29, 29, 29),
 		onTextBtn = Color3.fromRGB(129, 83, 255),
 		onBgLineBtn = Color3.fromRGB(129, 83, 255),
 
-		--#elementsthemes
-
-		-- Toggle
 		toggleborder = Color3.fromRGB(135, 80, 236),
 		togglebg = Color3.fromRGB(98, 0, 255),
 
-		-- Slider
 		sliderbar = Color3.fromRGB(21,21,21),
-		sliderbarstroke = Color3.fromRGB(29, 29, 29),
-		sliderprogressbg = Color3.fromRGB(41, 11, 123),
-		sliderprogressborder = Color3.fromRGB(59, 6, 184),
-		sliderdotbg = Color3.fromRGB(120, 16, 206),
-		sliderdotstroke = Color3.fromRGB(9, 9, 9),
+		sliderbarstroke = Color3.fromRGB(29,29,29),
+		sliderprogressbg = Color3.fromRGB(41,11,123),
+		sliderprogressborder = Color3.fromRGB(59,6,184),
+		sliderdotbg = Color3.fromRGB(120,16,206),
+		sliderdotstroke = Color3.fromRGB(9,9,9),
 
-		-- Dropdown
-		containeritemsbg = Color3.fromRGB(28, 25, 23),
+		containeritemsbg = Color3.fromRGB(28,25,23),
 
-		itembg = Color3.fromRGB(39, 39, 42),
-		itemcheckmarkcolor = Color3.fromRGB(154, 154, 154),
+		itembg = Color3.fromRGB(39,39,42),
+		itemcheckmarkcolor = Color3.fromRGB(154,154,154),
 		itemTextOn = Color3.fromHex("#e9e9e9"),
 		itemTextOff = Color3.fromHex("9a9a9a"),
 
-		valuetext = Color3.fromRGB(255, 255, 255),
-		valuebg = Color3.fromRGB(39, 39, 42),
-
-		-- Bind
-		-- not need ah sigma pro sex master
+		valuetext = Color3.fromRGB(255,255,255),
+		valuebg = Color3.fromRGB(39,39,42),
 	},
-	Christmas = {
-		maincolor = Color3.new(1.000000, 0.623529, 0.623529),
+
+	Red = {
+		maincolor = Color3.fromRGB(9, 9, 9),
 		bordercolor = Color3.fromRGB(39, 39, 42),
 		scrollocolor = Color3.fromRGB(28, 28, 30),
 
-		titlecolor = Color3.new(1.000000, 1.000000, 1.000000),
-		descriptioncolor = Color3.new(1.000000, 1.000000, 1.000000),
+		titlecolor = Color3.fromRGB(255, 255, 255),
+		descriptioncolor = Color3.fromRGB(168, 168, 168),
 		elementdescription = Color3.fromRGB(168, 168, 168),
 
-		primarycolor = Color3.new(0.854902, 0.415686, 0.415686),
+		primarycolor = Color3.fromRGB(230, 50, 50),
 
-		-- Tabs Themes
-		offTextBtn = Color3.new(0.878431, 0.878431, 0.878431),
-		offBgLineBtn = Color3.new(0.839216, 0.839216, 0.839216),
-		onTextBtn = Color3.new(0.858824, 0.356863, 0.356863),
-		onBgLineBtn = Color3.new(0.858824, 0.356863, 0.356863),
+		offTextBtn = Color3.fromRGB(63, 63, 63),
+		offBgLineBtn = Color3.fromRGB(29, 29, 29),
+		onTextBtn = Color3.fromRGB(255, 77, 77),
+		onBgLineBtn = Color3.fromRGB(255, 77, 77),
 
-		--#elementsthemes
+		toggleborder = Color3.fromRGB(255, 51, 51),
+		togglebg = Color3.fromRGB(191, 0, 0),
 
-		-- Toggle
-		toggleborder = Color3.new(1.000000, 1.000000, 1.000000),
-		togglebg = Color3.new(0.921569, 0.203922, 0.203922),
-
-		-- Slider
 		sliderbar = Color3.fromRGB(21,21,21),
+		sliderbarstroke = Color3.fromRGB(29,29,29),
+		sliderprogressbg = Color3.fromRGB(102,13,13),
+		sliderprogressborder = Color3.fromRGB(191,26,26),
+		sliderdotbg = Color3.fromRGB(255,51,51),
+		sliderdotstroke = Color3.fromRGB(9,9,9),
+
+		containeritemsbg = Color3.fromRGB(28,25,23),
+
+		itembg = Color3.fromRGB(39,39,42),
+		itemcheckmarkcolor = Color3.fromRGB(153,153,153),
+		itemTextOn = Color3.fromHex("#e9e9e9"),
+		itemTextOff = Color3.fromHex("9a9a9a"),
+
+		valuetext = Color3.fromRGB(255,255,255),
+		valuebg = Color3.fromRGB(39,39,42),
+	},
+
+	Green = {
+		maincolor = Color3.fromRGB(9,9,9),
+		bordercolor = Color3.fromRGB(39,39,42),
+		scrollocolor = Color3.fromRGB(28,28,30),
+
+		titlecolor = Color3.fromRGB(245,245,245),
+		descriptioncolor = Color3.fromRGB(168,168,168),
+		elementdescription = Color3.fromRGB(168,168,168),
+
+		primarycolor = Color3.fromRGB(50, 200, 80),
+
+		offTextBtn = Color3.fromRGB(63,63,63),
+		offBgLineBtn = Color3.fromRGB(29,29,29),
+		onTextBtn = Color3.fromRGB(77,255,117),
+		onBgLineBtn = Color3.fromRGB(77,255,117),
+
+		toggleborder = Color3.fromRGB(51,255,102),
+		togglebg = Color3.fromRGB(0,180,60),
+
+		sliderbar = Color3.fromRGB(21,21,21),
+		sliderbarstroke = Color3.fromRGB(29,29,29),
+		sliderprogressbg = Color3.fromRGB(13,102,33),
+		sliderprogressborder = Color3.fromRGB(26,191,57),
+		sliderdotbg = Color3.fromRGB(51,255,102),
+		sliderdotstroke = Color3.fromRGB(9,9,9),
+
+		containeritemsbg = Color3.fromRGB(28,25,23),
+
+		itembg = Color3.fromRGB(39,39,42),
+		itemcheckmarkcolor = Color3.fromRGB(154,154,154),
+		itemTextOn = Color3.fromHex("#e9e9e9"),
+		itemTextOff = Color3.fromHex("9a9a9a"),
+
+		valuetext = Color3.fromRGB(255,255,255),
+		valuebg = Color3.fromRGB(39,39,42),
+	},
+
+	Blue = {
+		maincolor = Color3.fromRGB(9,9,9),
+		bordercolor = Color3.fromRGB(39,39,42),
+		scrollocolor = Color3.fromRGB(28,28,30),
+
+		titlecolor = Color3.fromRGB(245,245,245),
+		descriptioncolor = Color3.fromRGB(168,168,168),
+		elementdescription = Color3.fromRGB(168,168,168),
+
+		primarycolor = Color3.fromRGB(60,120,255),
+
+		offTextBtn = Color3.fromRGB(63,63,63),
+		offBgLineBtn = Color3.fromRGB(29,29,29),
+		onTextBtn = Color3.fromRGB(100,160,255),
+		onBgLineBtn = Color3.fromRGB(100,160,255),
+
+		toggleborder = Color3.fromRGB(80,140,255),
+		togglebg = Color3.fromRGB(20,60,200),
+
+		sliderbar = Color3.fromRGB(21,21,21),
+		sliderbarstroke = Color3.fromRGB(29,29,29),
+		sliderprogressbg = Color3.fromRGB(20,40,120),
+		sliderprogressborder = Color3.fromRGB(30,80,200),
+		sliderdotbg = Color3.fromRGB(80,140,255),
+		sliderdotstroke = Color3.fromRGB(9,9,9),
+
+		containeritemsbg = Color3.fromRGB(28,25,23),
+
+		itembg = Color3.fromRGB(39,39,42),
+		itemcheckmarkcolor = Color3.fromRGB(154,154,154),
+		itemTextOn = Color3.fromHex("#e9e9e9"),
+		itemTextOff = Color3.fromHex("9a9a9a"),
+
+		valuetext = Color3.fromRGB(255,255,255),
+		valuebg = Color3.fromRGB(39,39,42),
+	},
+
+	BlueLight = {
+		maincolor = Color3.fromRGB(9,9,9),
+		bordercolor = Color3.fromRGB(39,39,42),
+		scrollocolor = Color3.fromRGB(28,28,30),
+
+		titlecolor = Color3.fromRGB(255,255,255),
+		descriptioncolor = Color3.fromRGB(200,200,200),
+		elementdescription = Color3.fromRGB(200,200,200),
+
+		primarycolor = Color3.fromRGB(120,180,255),
+
+		offTextBtn = Color3.fromRGB(63,63,63),
+		offBgLineBtn = Color3.fromRGB(29,29,29),
+		onTextBtn = Color3.fromRGB(140,200,255),
+		onBgLineBtn = Color3.fromRGB(140,200,255),
+
+		toggleborder = Color3.fromRGB(160,210,255),
+		togglebg = Color3.fromRGB(70,120,200),
+
+		sliderbar = Color3.fromRGB(21,21,21),
+		sliderbarstroke = Color3.fromRGB(29,29,29),
+		sliderprogressbg = Color3.fromRGB(60,90,140),
+		sliderprogressborder = Color3.fromRGB(100,150,220),
+		sliderdotbg = Color3.fromRGB(160,210,255),
+		sliderdotstroke = Color3.fromRGB(9,9,9),
+
+		containeritemsbg = Color3.fromRGB(28,25,23),
+
+		itembg = Color3.fromRGB(39,39,42),
+		itemcheckmarkcolor = Color3.fromRGB(154,154,154),
+		itemTextOn = Color3.fromHex("#e9e9e9"),
+		itemTextOff = Color3.fromHex("9a9a9a"),
+
+		valuetext = Color3.fromRGB(255,255,255),
+		valuebg = Color3.fromRGB(39,39,42),
+	},
+
+	White = {
+		maincolor = Color3.fromRGB(9,9,9),
+		bordercolor = Color3.fromRGB(39,39,42),
+		scrollocolor = Color3.fromRGB(28,28,30),
+
+		titlecolor = Color3.fromRGB(255,255,255),
+		descriptioncolor = Color3.fromRGB(200,200,200),
+		elementdescription = Color3.fromRGB(200,200,200),
+
+		primarycolor = Color3.fromRGB(240,240,240),
+
+		offTextBtn = Color3.fromRGB(63,63,63),
+		offBgLineBtn = Color3.fromRGB(29,29,29),
+		onTextBtn = Color3.fromRGB(255,255,255),
+		onBgLineBtn = Color3.fromRGB(255,255,255),
+
+		toggleborder = Color3.fromRGB(255,255,255),
+		togglebg = Color3.fromRGB(200,200,200),
+
+		sliderbar = Color3.fromRGB(21,21,21),
+		sliderbarstroke = Color3.fromRGB(29,29,29),
+		sliderprogressbg = Color3.fromRGB(120,120,120),
+		sliderprogressborder = Color3.fromRGB(180,180,180),
+		sliderdotbg = Color3.fromRGB(255,255,255),
+		sliderdotstroke = Color3.fromRGB(9,9,9),
+
+		containeritemsbg = Color3.fromRGB(28,25,23),
+
+		itembg = Color3.fromRGB(39,39,42),
+		itemcheckmarkcolor = Color3.fromRGB(154,154,154),
+		itemTextOn = Color3.fromHex("#e9e9e9"),
+		itemTextOff = Color3.fromHex("9a9a9a"),
+
+		valuetext = Color3.fromRGB(255,255,255),
+		valuebg = Color3.fromRGB(39,39,42),
+	},
+
+	Yellow = {
+		maincolor = Color3.fromRGB(9,9,9),
+		bordercolor = Color3.fromRGB(39,39,42),
+		scrollocolor = Color3.fromRGB(28,28,30),
+
+		titlecolor = Color3.fromRGB(255,255,255),
+		descriptioncolor = Color3.fromRGB(200,200,200),
+		elementdescription = Color3.fromRGB(200,200,200),
+
+		primarycolor = Color3.fromRGB(255,215,0),
+
+		offTextBtn = Color3.fromRGB(63,63,63),
+		offBgLineBtn = Color3.fromRGB(29,29,29),
+		onTextBtn = Color3.fromRGB(255,230,100),
+		onBgLineBtn = Color3.fromRGB(255,230,100),
+
+		toggleborder = Color3.fromRGB(255,230,90),
+		togglebg = Color3.fromRGB(200,170,0),
+
+		sliderbar = Color3.fromRGB(21,21,21),
+		sliderbarstroke = Color3.fromRGB(29,29,29),
+		sliderprogressbg = Color3.fromRGB(120,100,20),
+		sliderprogressborder = Color3.fromRGB(220,180,40),
+		sliderdotbg = Color3.fromRGB(255,230,90),
+		sliderdotstroke = Color3.fromRGB(9,9,9),
+
+		containeritemsbg = Color3.fromRGB(28,25,23),
+
+		itembg = Color3.fromRGB(39,39,42),
+		itemcheckmarkcolor = Color3.fromRGB(154,154,154),
+		itemTextOn = Color3.fromHex("#e9e9e9"),
+		itemTextOff = Color3.fromHex("9a9a9a"),
+
+		valuetext = Color3.fromRGB(255,255,255),
+		valuebg = Color3.fromRGB(39,39,42),
+	},
+
+	Pink = {
+		maincolor = Color3.fromRGB(9,9,9),
+		bordercolor = Color3.fromRGB(39,39,42),
+		scrollocolor = Color3.fromRGB(28,28,30),
+
+		titlecolor = Color3.fromRGB(255,225,240),
+		descriptioncolor = Color3.fromRGB(190,150,180),
+		elementdescription = Color3.fromRGB(190,150,180),
+
+		primarycolor = Color3.fromRGB(255,105,180),
+
+		offTextBtn = Color3.fromRGB(63,63,63),
+		offBgLineBtn = Color3.fromRGB(29,29,29),
+		onTextBtn = Color3.fromRGB(255,150,200),
+		onBgLineBtn = Color3.fromRGB(255,150,200),
+
+		toggleborder = Color3.fromRGB(255,150,200),
+		togglebg = Color3.fromRGB(200,60,130),
+
+		sliderbar = Color3.fromRGB(21,21,21),
+		sliderbarstroke = Color3.fromRGB(29,29,29),
+		sliderprogressbg = Color3.fromRGB(120,20,70),
+		sliderprogressborder = Color3.fromRGB(200,60,130),
+		sliderdotbg = Color3.fromRGB(255,150,200),
+		sliderdotstroke = Color3.fromRGB(9,9,9),
+
+		containeritemsbg = Color3.fromRGB(28,25,23),
+
+		itembg = Color3.fromRGB(39,39,42),
+		itemcheckmarkcolor = Color3.fromRGB(154,154,154),
+		itemTextOn = Color3.fromHex("#e9e9e9"),
+		itemTextOff = Color3.fromHex("9a9a9a"),
+
+		valuetext = Color3.fromRGB(255,255,255),
+		valuebg = Color3.fromRGB(39,39,42),
+	},
+
+	Orange = {
+		maincolor = Color3.fromRGB(9,9,9),
+		bordercolor = Color3.fromRGB(39,39,42),
+		scrollocolor = Color3.fromRGB(28,28,30),
+
+		titlecolor = Color3.fromRGB(255,240,220),
+		descriptioncolor = Color3.fromRGB(200,170,150),
+		elementdescription = Color3.fromRGB(200,170,150),
+
+		primarycolor = Color3.fromRGB(255,140,0),
+
+		offTextBtn = Color3.fromRGB(63,63,63),
+		offBgLineBtn = Color3.fromRGB(29,29,29),
+		onTextBtn = Color3.fromRGB(255,175,80),
+		onBgLineBtn = Color3.fromRGB(255,175,80),
+
+		toggleborder = Color3.fromRGB(255,160,60),
+		togglebg = Color3.fromRGB(200,90,0),
+
+		sliderbar = Color3.fromRGB(21,21,21),
+		sliderbarstroke = Color3.fromRGB(29,29,29),
+		sliderprogressbg = Color3.fromRGB(120,60,10),
+		sliderprogressborder = Color3.fromRGB(220,120,40),
+		sliderdotbg = Color3.fromRGB(255,160,60),
+		sliderdotstroke = Color3.fromRGB(9,9,9),
+
+		containeritemsbg = Color3.fromRGB(28,25,23),
+
+		itembg = Color3.fromRGB(39,39,42),
+		itemcheckmarkcolor = Color3.fromRGB(154,154,154),
+		itemTextOn = Color3.fromHex("#e9e9e9"),
+		itemTextOff = Color3.fromHex("9a9a9a"),
+
+		valuetext = Color3.fromRGB(255,255,255),
+		valuebg = Color3.fromRGB(39,39,42),
+	},
+
+	Christmas = {
+		maincolor = Color3.fromRGB(9,9,9),
+		bordercolor = Color3.fromRGB(39,39,42),
+		scrollocolor = Color3.fromRGB(28,28,30),
+
+		titlecolor = Color3.fromRGB(255,255,255),
+		descriptioncolor = Color3.fromRGB(200,200,200),
+		elementdescription = Color3.fromRGB(200,200,200),
+
+		primarycolor = Color3.fromRGB(0, 200, 0), -- main green
+
+		offTextBtn = Color3.fromRGB(63,63,63),
+		offBgLineBtn = Color3.fromRGB(29,29,29),
+		onTextBtn = Color3.fromRGB(255, 70, 70), -- red highlight
+		onBgLineBtn = Color3.fromRGB(255, 70, 70),
+
+		toggleborder = Color3.fromRGB(255, 220, 70), -- golden
+		togglebg = Color3.fromRGB(0,150,0), -- stronger green
+
+		sliderbar = Color3.fromRGB(21,21,21),
+		sliderbarstroke = Color3.fromRGB(29,29,29),
+		sliderprogressbg = Color3.fromRGB(120,30,30),
+		sliderprogressborder = Color3.fromRGB(220,40,40),
+		sliderdotbg = Color3.fromRGB(255,220,70),
+		sliderdotstroke = Color3.fromRGB(9,9,9),
+
+		containeritemsbg = Color3.fromRGB(28,25,23),
+
+		itembg = Color3.fromRGB(39,39,42),
+		itemcheckmarkcolor = Color3.fromRGB(154,154,154),
+		itemTextOn = Color3.fromHex("#e9e9e9"),
+		itemTextOff = Color3.fromHex("9a9a9a"),
+
+		valuetext = Color3.fromRGB(255,255,255),
+		valuebg = Color3.fromRGB(39,39,42),
+	},
+	NeonGreen = {
+		maincolor = Color3.fromRGB(9, 9, 9),
+		bordercolor = Color3.fromRGB(39, 39, 42),
+		scrollocolor = Color3.fromRGB(28, 28, 30),
+
+		titlecolor = Color3.fromRGB(245, 245, 245),
+		descriptioncolor = Color3.fromRGB(168, 168, 168),
+		elementdescription = Color3.fromRGB(168, 168, 168),
+
+		primarycolor = Color3.fromRGB(57, 255, 20), -- neon green
+
+		offTextBtn = Color3.fromRGB(63, 63, 63),
+		offBgLineBtn = Color3.fromRGB(29, 29, 29),
+		onTextBtn = Color3.fromRGB(57, 255, 20),
+		onBgLineBtn = Color3.fromRGB(57, 255, 20),
+
+		toggleborder = Color3.fromRGB(57, 255, 20),
+		togglebg = Color3.fromRGB(0, 180, 0),
+
+		sliderbar = Color3.fromRGB(21, 21, 21),
 		sliderbarstroke = Color3.fromRGB(29, 29, 29),
-		sliderprogressbg = Color3.new(0.921569, 0.152941, 0.152941),
-		sliderprogressborder = Color3.new(1.000000, 0.196078, 0.141176),
-		sliderdotbg = Color3.new(1.000000, 0.262745, 0.262745),
+		sliderprogressbg = Color3.fromRGB(23, 120, 23),
+		sliderprogressborder = Color3.fromRGB(57, 255, 20),
+		sliderdotbg = Color3.fromRGB(57, 255, 20),
 		sliderdotstroke = Color3.fromRGB(9, 9, 9),
 
-		-- Dropdown
-		containeritemsbg = Color3.new(1.000000, 0.121569, 0.121569),
+		containeritemsbg = Color3.fromRGB(28, 25, 23),
 
-		itembg = Color3.new(0.933333, 0.188235, 0.188235),
-		itemcheckmarkcolor = Color3.fromRGB(154, 154, 154),
+		itembg = Color3.fromRGB(39, 39, 42),
+		itemcheckmarkcolor = Color3.fromRGB(153, 153, 153),
 		itemTextOn = Color3.fromHex("#e9e9e9"),
 		itemTextOff = Color3.fromHex("9a9a9a"),
 
 		valuetext = Color3.fromRGB(255, 255, 255),
 		valuebg = Color3.fromRGB(39, 39, 42),
-
-		-- Bind
-		-- not need ah sigma pro sex master
 	},
-    BlueLockRivals = {
-            maincolor = Color3.fromRGB(9, 9, 9),
-            bordercolor = Color3.fromRGB(39, 39, 42),
-            scrollocolor = Color3.fromRGB(28, 28, 30),
-    
-            titlecolor = Color3.fromRGB(245, 245, 245),
-            descriptioncolor = Color3.fromRGB(168, 168, 168),
-            elementdescription = Color3.fromRGB(168, 168, 168),
-    
-            primarycolor = Color3.fromRGB(3, 181, 252),
-    
-            -- Tabs Themes
-            offTextBtn = Color3.fromRGB(63, 63, 63),
-            offBgLineBtn = Color3.fromRGB(29, 29, 29),
-            onTextBtn = Color3.fromRGB(3, 252, 248),
-            onBgLineBtn = Color3.fromRGB(3, 252, 248),
-    
-            --#elementsthemes
-    
-            -- Toggle
-            toggleborder = Color3.fromRGB(3, 252, 248),
-            togglebg = Color3.fromRGB(3, 181, 252),
-    
-            -- Slider
-            sliderbar = Color3.fromRGB(21,21,21),
-            sliderbarstroke = Color3.fromRGB(29, 29, 29),
-            sliderprogressbg = Color3.fromRGB(130, 255, 249),
-            sliderprogressborder = Color3.fromRGB(3, 252, 248),
-            sliderdotbg = Color3.fromRGB(3, 57, 252),
-            sliderdotstroke = Color3.fromRGB(9, 9, 9),
-    
-            -- Dropdown
-            containeritemsbg = Color3.fromRGB(28, 25, 23),
-    
-            itembg = Color3.fromRGB(39, 39, 42),
-            itemcheckmarkcolor = Color3.fromRGB(154, 154, 154),
-            itemTextOn = Color3.fromHex("#e9e9e9"),
-            itemTextOff = Color3.fromHex("9a9a9a"),
-    
-            valuetext = Color3.fromRGB(255, 255, 255),
-            valuebg = Color3.fromRGB(39, 39, 42),
-    
-            -- Bind
-            -- not need ah sigma pro sex master
-        },
-    LunarRed = {
-        maincolor = Color3.fromRGB(9, 9, 9),
-        bordercolor = Color3.fromRGB(39, 39, 42),
-        scrollocolor = Color3.fromRGB(28, 28, 30),
-    
-        titlecolor = Color3.fromRGB(245, 245, 245),
-        descriptioncolor = Color3.fromRGB(168, 168, 168),
-        elementdescription = Color3.fromRGB(168, 168, 168),
-    
-        primarycolor = Color3.fromRGB(78, 34, 197),
-    
-        -- Tabs Themes
-        offTextBtn = Color3.fromRGB(63, 63, 63),
-        offBgLineBtn = Color3.fromRGB(29, 29, 29),
-        onTextBtn = Color3.fromRGB(129, 83, 255),
-        onBgLineBtn = Color3.fromRGB(129, 83, 255),
-    
-        --#elementsthemes
-    
-        -- Toggle
-        toggleborder = Color3.fromRGB(135, 80, 236),
-        togglebg = Color3.fromRGB(98, 0, 255),
-    
-        -- Slider
-        sliderbar = Color3.fromRGB(21,21,21),
-        sliderbarstroke = Color3.fromRGB(29, 29, 29),
-        sliderprogressbg = Color3.fromRGB(41, 11, 123),
-        sliderprogressborder = Color3.fromRGB(59, 6, 184),
-        sliderdotbg = Color3.fromRGB(120, 16, 206),
-        sliderdotstroke = Color3.fromRGB(9, 9, 9),
-    
-        -- Dropdown
-        containeritemsbg = Color3.fromRGB(28, 25, 23),
-    
-        itembg = Color3.fromRGB(39, 39, 42),
-        itemcheckmarkcolor = Color3.fromRGB(154, 154, 154),
-        itemTextOn = Color3.fromHex("#e9e9e9"),
-        itemTextOff = Color3.fromHex("9a9a9a"),
-    
-        valuetext = Color3.fromRGB(255, 255, 255),
-        valuebg = Color3.fromRGB(39, 39, 42),
-    },
+	Teal = {
+		maincolor = Color3.fromRGB(9, 9, 12),
+		bordercolor = Color3.fromRGB(39, 39, 42),
+		scrollocolor = Color3.fromRGB(20, 20, 28),
+
+		titlecolor = Color3.fromRGB(245, 245, 245),
+		descriptioncolor = Color3.fromRGB(168, 168, 168),
+		elementdescription = Color3.fromRGB(168, 168, 168),
+
+		primarycolor = Color3.fromRGB(40, 120, 150), -- cool teal
+
+		offTextBtn = Color3.fromRGB(63, 63, 63),
+		offBgLineBtn = Color3.fromRGB(29, 29, 29),
+		onTextBtn = Color3.fromRGB(70, 150, 170),
+		onBgLineBtn = Color3.fromRGB(70, 150, 170),
+
+		toggleborder = Color3.fromRGB(60, 150, 170),
+		togglebg = Color3.fromRGB(20, 80, 110),
+
+		sliderbar = Color3.fromRGB(21, 21, 21),
+		sliderbarstroke = Color3.fromRGB(29, 29, 29),
+		sliderprogressbg = Color3.fromRGB(20, 60, 90),
+		sliderprogressborder = Color3.fromRGB(60, 150, 170),
+		sliderdotbg = Color3.fromRGB(60, 150, 170),
+		sliderdotstroke = Color3.fromRGB(9, 9, 9),
+
+		containeritemsbg = Color3.fromRGB(28, 25, 23),
+
+		itembg = Color3.fromRGB(39, 39, 42),
+		itemcheckmarkcolor = Color3.fromRGB(153, 153, 153),
+		itemTextOn = Color3.fromHex("#e9e9e9"),
+		itemTextOff = Color3.fromHex("9a9a9a"),
+
+		valuetext = Color3.fromRGB(255, 255, 255),
+		valuebg = Color3.fromRGB(39, 39, 42),
+	},
+
+	Midnight = {
+		maincolor = Color3.fromRGB(5, 8, 20), -- deep navy
+		bordercolor = Color3.fromRGB(39, 39, 42),
+		scrollocolor = Color3.fromRGB(15, 18, 30),
+
+		titlecolor = Color3.fromRGB(230, 235, 255), -- moonlight white-blue
+		descriptioncolor = Color3.fromRGB(168, 168, 180),
+		elementdescription = Color3.fromRGB(168, 168, 180),
+
+		primarycolor = Color3.fromRGB(70, 90, 200), -- midnight blue accent
+
+		offTextBtn = Color3.fromRGB(63, 63, 63),
+		offBgLineBtn = Color3.fromRGB(29, 29, 29),
+		onTextBtn = Color3.fromRGB(90, 110, 230), -- light blue glow
+		onBgLineBtn = Color3.fromRGB(90, 110, 230),
+
+		toggleborder = Color3.fromRGB(90, 110, 230),
+		togglebg = Color3.fromRGB(40, 50, 140),
+
+		sliderbar = Color3.fromRGB(21, 21, 21),
+		sliderbarstroke = Color3.fromRGB(29, 29, 29),
+		sliderprogressbg = Color3.fromRGB(40, 50, 120),
+		sliderprogressborder = Color3.fromRGB(90, 110, 230),
+		sliderdotbg = Color3.fromRGB(90, 110, 230),
+		sliderdotstroke = Color3.fromRGB(9, 9, 9),
+
+		containeritemsbg = Color3.fromRGB(28, 25, 23),
+
+		itembg = Color3.fromRGB(39, 39, 42),
+		itemcheckmarkcolor = Color3.fromRGB(153, 153, 153),
+		itemTextOn = Color3.fromHex("#e9e9e9"),
+		itemTextOff = Color3.fromHex("9a9a9a"),
+
+		valuetext = Color3.fromRGB(255, 255, 255),
+		valuebg = Color3.fromRGB(39, 39, 42),
+	},
+
 }
 
-return themes
+return Themes
