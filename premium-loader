@@ -18,6 +18,7 @@ local games = {
     [34869880] = 'https://api.luarmor.net/files/v3/loaders/967853bf20a80d456090a3f219ab8ad2.lua', -- PVB
     [35102746] = 'https://api.luarmor.net/files/v3/loaders/6b4001830e15b3b842803bc342dd1304.lua', -- Fish It
     [35489258] = 'https://api.luarmor.net/files/v3/loaders/d658b42c208c6a70269e3f65e362ae5c.lua', -- The Forge
+    [34898222] = 'https://api.luarmor.net/files/v3/loaders/144dffd9a33478f0985bafc8f692f3f2.lua', -- Abyss
 }
 
 if games[creator] then
